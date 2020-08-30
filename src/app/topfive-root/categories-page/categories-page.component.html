@@ -1,0 +1,21 @@
+<div class="bg-image">
+  <div
+    class="category-panel-container"
+    fxLayout="row"
+    fxLayoutAlign="start center"
+  >
+    <ul
+      class="category-button-list"
+      fxLayout="row"
+      fxLayoutAlign="space-evenly center"
+    >
+      <li
+        *ngFor="let category of showsCategories | keyvalue"
+        class="category-button"
+        routerLink="/tvshows/{{ category.value }}"
+      >
+        {{ category.value }}
+      </li>
+    </ul>
+  </div>
+</div>

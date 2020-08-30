@@ -1,0 +1,34 @@
+.carousel-container {
+  height: 90vh;
+  width: 100%;
+  background-color: var(--color-white-2);
+}
+
+.backdrops {
+  height: 35rem;
+  padding: 0.5rem;
+}
+
+.backdrop {
+  object-fit: contain;
+  height: 100%;
+  width: 35rem;
+}
+
+.show-title {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 1rem 0 1rem 0;
+  color: var(--color-dark-orange);
+}
+
+.show-description {
+  height: 100%;
+  width: 20rem;
+  background-color: inherit;
+  border-style: none;
+  border-color: Transparent;
+  overflow: auto;
+  pointer-events: none;
+}

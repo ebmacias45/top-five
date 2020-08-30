@@ -1,0 +1,25 @@
+<app-spinner-component *ngIf="backdrops.length === 0"></app-spinner-component>
+<ng-container *ngIf="backdrops && backdrops.length > 0">
+  <div class="carousel-container">
+    <ngx-glide [perView]="1" [type]="'slider'" [showBullets]="false">
+      <div
+        class="backdrops"
+        fxLayout="row"
+        fxLayoutAlign="center center
+      "
+        *ngFor="let element of backdrops; let i = index; trackBy: trackByFn"
+      >
+        <div fxLayout="row" fxLayoutAlign="center">
+          <img class="backdrop" [src]="element.show.image.original" />
+
+          <div fxLayout="column" fxLayoutAlign="center center">
+            <span class="show-title"> {{ element.show.name }}</span>
+            <textarea class="show-description">{{
+              element.show.summary | removeTags
+            }}</textarea>
+          </div>
+        </div>
+      </div>
+    </ngx-glide>
+  </div>
+</ng-container>

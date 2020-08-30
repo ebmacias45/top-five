@@ -1,0 +1,63 @@
+.main {
+  &-container {
+    background: url("../../../assets/images/main.jpg") no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &-wrapper {
+    margin: 2.5rem 14rem 2.5rem 2.5rem;
+  }
+
+  &-title {
+    text-transform: capitalize;
+    font-weight: 800;
+    font-size: 3rem;
+    color: var(--color-grey-dark-3);
+  }
+
+  &-text {
+    color: var(--color-grey-dark-3);
+    font-size: 1.2rem;
+  }
+
+  &-button {
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: var(--color-white);
+    font-weight: 500;
+    transition: all 0.1s ease;
+    background: linear-gradient(
+      to right,
+      var(--color-dark-orange) 50%,
+      var(--color-grey-dark-3) 50%
+    );
+    background-size: 200% 100%;
+    background-position: right bottom;
+    margin-top: 10rem;
+    opacity: 0.8;
+    animation: fadeIn ease-in 3s;
+    cursor: pointer;
+    &:hover {
+      background-position: left bottom;
+      opacity: 1;
+    }
+  }
+}
+
+.color-text {
+  color: var(--color-dark-orange);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}

@@ -1,0 +1,62 @@
+.about {
+  &-container {
+    height: 97%;
+    width: 100%;
+  }
+
+  &-img {
+    background: url("../../../assets/images/about.jpg") no-repeat center center;
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+  }
+
+  &-text {
+    margin-top: 5rem;
+    text-align: center;
+    font-weight: 200;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: var(--color-grey-dark-2);
+    height: 90%;
+    width: 70%;
+    border-style: none;
+    border-color: Transparent;
+    pointer-events: none;
+    overflow: hidden;
+    background-color: inherit;
+    pointer-events: none;
+    resize: none;
+    text-shadow: 0px 0.5rem 0.7rem var(--color-grey-light-4);
+  }
+
+  &-author {
+    margin: 1rem 0;
+    position: relative;
+    left: 25%;
+  }
+
+  &-title {
+    text-transform: capitalize;
+    font-weight: 800;
+    font-size: 1rem;
+    color: var(--color-dark-orange);
+    margin-right: 2rem;
+  }
+}
+
+.logo {
+  height: 2rem;
+  margin-right: 0.5rem;
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.color-text {
+  color: var(--color-dark-orange);
+}

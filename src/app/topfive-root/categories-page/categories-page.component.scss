@@ -1,0 +1,38 @@
+.category-button-list {
+  list-style-type: none;
+  width: 100%;
+}
+
+.category-button {
+  margin: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--color-white);
+  animation: fadeIn ease-in 1.5s;
+  &:hover {
+    color: var(--color-dark-orange);
+  }
+}
+
+.bg-image {
+  background: url("../../../assets/images/bg-image.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+.category-panel-container {
+  height: 6rem;
+  width: 100%;
+  z-index: 9;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
